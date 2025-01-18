@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Requests</title>
+</head>
+<body>
+    <h1>Service Requests</h1>
+    <ul>
+        {% for request in requests %}
+            <li>
+                <a href="{% url 'request_details' request.id %}">
+                    {{ request.customer_name }} - {{ request.status }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

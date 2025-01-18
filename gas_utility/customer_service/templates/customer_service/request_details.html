@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Details</title>
+</head>
+<body>
+    <h1>Request Details</h1>
+    <p><strong>Customer Name:</strong> {{ service_request.customer_name }}</p>
+    <p><strong>Email:</strong> {{ service_request.email }}</p>
+    <p><strong>Phone:</strong> {{ service_request.phone }}</p>
+    <p><strong>Request Type:</strong> {{ service_request.get_request_type_display }}</p>
+    <p><strong>Description:</strong> {{ service_request.description }}</p>
+    <p><strong>Status:</strong> {{ service_request.get_status_display }}</p>
+    <p><strong>Created At:</strong> {{ service_request.created_at }}</p>
+    <p><strong>Updated At:</strong> {{ service_request.updated_at }}</p>
+</body>
+</html>
